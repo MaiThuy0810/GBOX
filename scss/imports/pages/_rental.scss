@@ -1,0 +1,285 @@
+.date__begin,
+.date__end {
+  input {
+    padding: 10px;
+    font-style: italic;
+  }
+}
+.rentalpage {
+  .rental {
+    input {
+      border: none;
+      outline: none;
+      font-family: serif;
+      // font-size: ;
+      &:focus,
+      &:active {
+        border: none;
+        outline: none;
+      }
+    }
+
+    @include xs {
+      input,
+      textarea {
+        width: 100%;
+      }
+    }
+    .container {
+      display: flex;
+      // margin-top: -16px;
+      @include xs {
+        display: block;
+        padding-top: 90px;
+      }
+      .rental__info {
+        padding-top: 72px;
+        background-color: $gray-cl;
+        width: 260px;
+        height: 640px;
+        @include xs {
+          background-color: initial;
+          display: flex;
+          width: initial;
+          height: initial;
+          padding-top: 0px;
+        }
+        .number {
+          margin-left: 20px;
+          @include xs {
+            margin-left: 0px;
+          }
+        }
+        &-wrap {
+          .titrental {
+            margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            @include xs {
+              margin-top: 0px;
+              margin-bottom: 5px;
+            }
+          }
+          .--rental {
+            color: #ffffff;
+            @include xs {
+              color: $red-dark-cl;
+            }
+          }
+          .ratio {
+            margin-left: 20px;
+            @include xs {
+              p:nth-child(1) {
+                margin-bottom: 0px;
+                // color: $red-white-cl;
+              }
+              p:nth-child(2) {
+                span {
+                  display: none;
+                }
+              }
+            }
+            p {
+              color: #fff;
+              @include xs {
+                color: $red-gray-cl;
+              }
+            }
+          }
+        }
+      }
+
+      .rental__submit {
+        padding-top: 72px;
+        margin-left: 50px;
+        @include xs {
+          margin-left: 0px;
+          padding-top: 40px;
+        }
+        &-company {
+          input {
+            border-bottom: 1px solid;
+          }
+          @include xs {
+            .form {
+              display: block;
+              &__right {
+                padding-left: 0px;
+              }
+            }
+          }
+        }
+        &-booking {
+          .choose {
+            p {
+              font-size: 12px;
+              font-family: pr;
+              margin: 40px auto 20px auto;
+              text-transform: capitalize;
+            }
+            &__number {
+              display: flex;
+              font-family: din;
+              font-size: 24px;
+              letter-spacing: -0.4px;
+              @include xs {
+                margin-bottom: 50px;
+              }
+              .num {
+                cursor: pointer;
+                border: 1px solid;
+                width: 39px;
+                height: 39px;
+                background: $red-dark-cl;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+                h4 {
+                  color: $red-white-cl;
+                }
+                &:hover {
+                  transition: ($t);
+                  background: $yellow-cl;
+                  h4 {
+                    color: $red-dark-cl;
+                  }
+                }
+                &.active {
+                  background-color: $yellow-cl;
+                  h4 {
+                    color: $red-dark-cl;
+                  }
+                }
+              }
+            }
+          }
+          .bookform {
+            input {
+              border: 1px solid;
+            }
+            .form {
+              margin-bottom: 10px;
+              .form__right {
+                textarea {
+                  margin: 30px auto 10px auto;
+                }
+                p {
+                  font-family: pr;
+                  font-size: 12px;
+                  font-style: italic;
+                }
+              }
+            }
+            label {
+              font-family: pr;
+              font-size: 12px;
+            }
+            .date {
+              display: flex;
+              margin-top: 20px;
+              @include xs {
+                display: block;
+              }
+              input {
+                width: 222px;
+                height: 40px;
+                @include xs {
+                  width: 100%;
+                }
+              }
+              .date__imge {
+                display: flex;
+                align-items: center;
+                padding: 0px 51px;
+                @include sm {
+                  padding: 0px 20px;
+                }
+                @include xs {
+                  display: none;
+                }
+              }
+
+              // .date__begin {
+              //   input {
+              //     padding: 10px;
+              //     font-style: italic;
+              //   }
+              // }
+              // .date__end {
+              //   input {
+              //     padding: 10px;
+              //     font-style: italic;
+              //   }
+              // }
+              .date__mobile {
+                display: none;
+                @include xs {
+                  display: flex;
+                  justify-content: center;
+                  margin: 15px;
+                }
+              }
+            }
+            .input__wrap {
+              @include xs {
+                padding-top: 10px;
+              }
+              .lab {
+                margin-top: 30px;
+                margin-bottom: 10px;
+              }
+              input {
+                // border: none;
+                width: 555px;
+                height: 40px;
+                @include sm {
+                  width: 495px;
+                }
+                @include xs {
+                  width: 100%;
+                }
+              }
+            }
+            .btn {
+              margin-top: 70px;
+              margin-bottom: 80px;
+              @include xs {
+                margin-top: 40px;
+                margin-bottom: 50px;
+              }
+              .btnbook {
+                position: relative;
+                display: block;
+                &__button {
+                  background-color: $gray-cl;
+                  a {
+                    color: $yellow-cl;
+                  }
+                  &:hover {
+                    background-color: $yellow-cl;
+                    a {
+                      color: $black-cl;
+                    }
+                  }
+                }
+                &__title {
+                  position: absolute;
+                  max-width: 225px;
+                  left: 120px;
+                  color: $black-cl;
+                  span {
+                    font-weight: bold;
+                  }
+                  @include xs {
+                    max-width: 160px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

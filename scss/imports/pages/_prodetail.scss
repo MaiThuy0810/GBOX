@@ -1,0 +1,117 @@
+// body .container,
+// html .container {
+//   width: 100%;
+//   padding-right: 0px;
+//   padding-left: 0px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+.productdetailpage {
+  .container {
+    @include md {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    @include xs {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .prodetail {
+    &__name {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .name {
+        @include welcomtext;
+      }
+      .fullscreen {
+        display: flex;
+        align-items: center;
+        margin-right: -475px;
+        p {
+          @include textdes;
+        }
+        img {
+          width: 10px;
+          height: 10px;
+          margin-left: 20px;
+        }
+        @include xs {
+          display: none;
+        }
+      }
+      .backall {
+        @include textdes;
+        display: flex;
+        align-items: center;
+        img {
+          margin-left: 30px;
+        }
+      }
+    }
+    &__image {
+      .flickity-viewport {
+        max-height: 480px;
+        touch-action: pan-y;
+      }
+      .flickity-button {
+        position: absolute;
+        background: none;
+        border: none;
+        color: $yellow-cl;
+
+        // @include xs {
+        //   display: block;
+        // }
+      }
+      .prodetail__image-slider {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .is-selected {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__descrip {
+      display: flex;
+      margin: 40px auto 80px auto;
+      span {
+        font-style: italic;
+      }
+      @include xs {
+        display: block;
+        margin: 40px auto;
+      }
+      &-mobile {
+        display: none;
+        @include xs {
+          display: block;
+        }
+      }
+      &-des {
+        max-width: 500px;
+        padding-right: 95px;
+        @include xs {
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+      }
+      &-client {
+        max-width: 240px;
+        padding-right: 180px;
+
+        @include xs {
+          display: none;
+        }
+      }
+    }
+  }
+}

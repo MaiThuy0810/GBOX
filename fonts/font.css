@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "pr";
+  src: url("/fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("/fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "peb";
+  src: url("/fonts/ProximaNovaA-Extrabld.woff2") format("woff2"),
+    url("/fonts/ProximaNovaA-Extrabld.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "pb";
+  src: url("/fonts/ProximaNova-Bold.woff2") format("woff2"),
+    url("/fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "din";
+  src: url("/fonts/DINCondensed-Bold.woff2") format("woff2"),
+    url("/fonts/DINCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "ar";
+  src: url("/fonts/SVN-ArialRegular.woff2") format("woff2"),
+    url("/fonts/SVN-ArialRegular.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+

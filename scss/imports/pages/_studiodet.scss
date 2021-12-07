@@ -1,0 +1,597 @@
+// table,
+// tr {
+//   border: 1px solid black;
+// }
+
+// table {
+//   width: 440px;
+//   tr {
+//     height: 60px;
+
+//     .name {
+//       text-align: start;
+//       vertical-align: middle;
+//       padding-left: 60px;
+//     }
+//     .price {
+//       vertical-align: middle;
+//       padding-right: 20px;
+//       text-align: end;
+//     }
+//   }
+// }
+
+// .studet,
+// .name,
+// .price {
+//   @include textdes;
+//   text-transform: capitalize;
+// }
+
+// .dowload,
+// .fullscreen,
+// .controls {
+//   display: flex;
+//   align-items: center;
+// }
+
+// span {
+//   font-weight: bold;
+// }
+
+// @include xs {
+//   .dowload,
+//   .fullscreen,
+//   .controls {
+//     display: none;
+//   }
+// }
+// .studiodet {
+//   &__banner {
+//     &-backall {
+//       justify-content: flex-end;
+//       margin: 15px auto 30px auto;
+//     }
+//     &-image {
+//       img {
+//         width: 100%;
+//       }
+//     }
+//     &-wrap {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       padding: 0px 20px;
+//       padding-bottom: 60px;
+//       border-bottom: 1px solid;
+//       @include xs {
+//         padding: 0px;
+//         justify-content: initial;
+//         align-items: initial;
+//       }
+//       .rental__info-wrap {
+//         p:nth-child(1) {
+//           margin-bottom: 5px;
+//         }
+//         @include xs {
+//           padding: 25px 0px 40px 30px;
+//         }
+//       }
+
+//       .dowload {
+//         img {
+//           margin-left: 10px;
+//         }
+//       }
+
+//       .fullscreen {
+//         img {
+//           margin-left: 10px;
+//         }
+//       }
+//     }
+//   }
+
+//   &__wrapper {
+//     display: flex;
+//     @include xs {
+//       display: block;
+//     }
+//     p {
+//       font-size: 14px;
+//       font-family: pr;
+//       color: $blue-gray-cl;
+//       text-transform: capitalize;
+//     }
+//     &-price {
+//       padding-right: 10px;
+//       .prices {
+//         padding-bottom: 120px;
+//         padding-top: 30px;
+//         p {
+//           margin: 30px 0px;
+//           max-width: 500px;
+//           @include xs {
+//             max-width: 230px;
+//           }
+//         }
+//       }
+//       .specs {
+//         .ratio {
+//           h3 {
+//             margin-bottom: 25px;
+//           }
+//         }
+//         // p:nth-child(2) {
+//         //   background: red;
+//         //   padding: 30px 0px;
+//         // }
+//         .text {
+//           padding: 30px 0px;
+//         }
+//       }
+//     }
+
+//     &-floor {
+//       padding-top: 30px;
+//       padding-bottom: 50px;
+//       h3 {
+//         margin-bottom: 93px;
+//       }
+
+//       .area__wrap {
+//         background-color: $blue-cl;
+//         width: 272px;
+//         height: 272px;
+//         margin-bottom: 122px;
+//         &-client {
+//           display: flex;
+//           justify-content: end;
+//           .wapper {
+//             background-color: $yellow-cl;
+//             width: 130px;
+//             height: 106px;
+//             .wrapper__item {
+//               padding: 40px 0px 40px 20px;
+//               .item {
+//                 h4 {
+//                   font-size: 12px;
+//                   // line-height: 20px;
+//                   font-weight: bold;
+//                   text-transform: uppercase;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//         &-dimen {
+//           padding: 40px 0px 90px 35px;
+//           .ratio {
+//             p {
+//               color: $red-white-cl;
+//             }
+//             p:first-child {
+//               margin-bottom: 0px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     &-des {
+//       p {
+//         padding-bottom: 30px;
+//       }
+//       p:nth-child(2) {
+//         max-width: 197px;
+
+//         line-height: 58px;
+//       }
+//     }
+//   }
+
+//   .studiodet__button {
+//     display: flex;
+//     justify-content: center;
+//     padding-bottom: 70px;
+//     .button__wraper {
+//       text-align: center;
+//       img {
+//         padding-bottom: 20px;
+//       }
+//       .btn {
+//         .btnbook {
+//           .btnbook__button {
+//             background-color: $gray-cl;
+//             // background-color: red;
+//             a {
+//               color: $yellow-cl;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// table,
+// tr {
+//   border: 1px solid black;
+// }
+
+// table {
+//   width: 440px;
+//   @include xs {
+//     width: 100%;
+//   }
+//   tr {
+//     height: 60px;
+
+//     .name {
+//       text-align: start;
+//       vertical-align: middle;
+//       padding-left: 60px;
+//     }
+//     .price {
+//       vertical-align: middle;
+//       padding-right: 20px;
+//       text-align: end;
+//     }
+//   }
+// }
+
+// .studet,
+// .name,
+// .price {
+//   @include textdes;
+//   text-transform: capitalize;
+// }
+
+// .dowload,
+// .fullscreen,
+// .controls {
+//   display: flex;
+//   align-items: center;
+// }
+
+// span {
+//   font-weight: bold;
+// }
+
+// p {
+//   line-height: initial;
+// }
+@include xs {
+  .dowload,
+  .fullscreen,
+  .controls {
+    display: none;
+  }
+}
+.studiodet {
+  table,
+  tr {
+    border: 1px solid black;
+  }
+
+  table {
+    width: 440px;
+    @include xs {
+      width: 100%;
+    }
+    tr {
+      height: 60px;
+
+      .name {
+        text-align: start;
+        vertical-align: middle;
+        padding-left: 60px;
+      }
+      .price {
+        vertical-align: middle;
+        padding-right: 20px;
+        text-align: end;
+      }
+    }
+  }
+
+  .studet,
+  .name,
+  .price {
+    @include textdes;
+    text-transform: capitalize;
+  }
+
+  .dowload,
+  .fullscreen,
+  .controls {
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    font-weight: bold;
+  }
+  p {
+    line-height: initial;
+  }
+  &__banner {
+    // height: 800px;
+    &-backall {
+      justify-content: flex-end;
+      margin: 30px auto 30px auto;
+      @include xs {
+        margin: 30px auto;
+      }
+    }
+    &-image {
+      // display: flex;
+      .flickity-viewport {
+        height: 403px;
+        touch-action: pan-y;
+      }
+      .flickity-button {
+        position: absolute;
+        background: none;
+        border: none;
+        color: $yellow-cl;
+
+        // @include xs {
+        //   display: block;
+        // }
+      }
+      //
+
+      .slider {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .is-selected {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 20px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid;
+      @include xs {
+        padding: 0px;
+        justify-content: initial;
+        align-items: initial;
+        border-bottom: none;
+      }
+      .rental__info-wrap {
+        p:nth-child(1) {
+          margin-bottom: 20px;
+        }
+        @include xs {
+          padding: 25px 0px 40px 30px;
+        }
+      }
+
+      .dowload {
+        img {
+          margin-left: 10px;
+        }
+        @include xs {
+          display: none;
+        }
+      }
+
+      .fullscreen {
+        img {
+          margin-left: 10px;
+        }
+        @include xs {
+          display: none;
+        }
+      }
+      .controls {
+        cursor: pointer;
+        @include xs {
+          display: none;
+        }
+        .icon {
+          transform: rotate(271deg);
+        }
+        .--previous {
+          transform: rotate(94deg);
+        }
+        .button:hover {
+          p {
+            color: $yellow-cl;
+          }
+
+          .icon {
+            fill: $yellow-cl;
+          }
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    p {
+      font-size: 14px;
+      font-family: pr;
+      color: $blue-gray-cl;
+      text-transform: capitalize;
+    }
+    &-price {
+      margin-bottom: 60px;
+
+      display: flex;
+      @include xs {
+        display: block;
+        margin-bottom: 30px;
+      }
+      .prices {
+        // padding-bottom: 120px;
+        padding-top: 30px;
+        p {
+          margin: 30px 0px;
+          max-width: 500px;
+          @include xs {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .floorplan {
+        padding-top: 30px;
+        @include xs {
+        }
+        h3 {
+          margin-bottom: 90px;
+          @include xs {
+            margin-bottom: 30px;
+          }
+        }
+        .area__wrap {
+          // background-color: $blue-cl;
+          // width: 272px;
+          // height: 272px;
+          // margin-bottom: 122px;
+          // border-top: 5px solid red;
+          // border-right: 6px solid;
+          // border-bottom: 6px solid;
+          // border-left: 6px solid;
+          // border-image: linear-gradient(
+          //   to right,
+          //   red 20%,
+          //   green 20%,
+          //   green 40%,
+          //   blue 40%,
+          //   blue 60%,
+          //   maroon 60%,
+          //   maroon 80%,
+          //   chocolate 80%
+          // ); /* gradient with required colors */
+          // border-image-slice: 1;
+
+          // @include xs {
+          //   margin-bottom: 30px;
+          //   width: 300px;
+          //   height: 300px;
+          // }
+          // &-client {
+          //   display: flex;
+          //   justify-content: end;
+          //   position: relative;
+          //   .wapper {
+          //     background-color: #ffde00;
+          //     width: 130px;
+          //     height: 106px;
+          //     position: absolute;
+          //     top: -5px;
+          //     right: -6px;
+          //     .wrapper__item {
+          //       padding: 40px 0px 40px 20px;
+          //       .item {
+          //         h4 {
+          //           font-size: 12px;
+          //           // line-height: 20px;
+          //           font-weight: bold;
+          //           text-transform: uppercase;
+          //         }
+          //       }
+          //     }
+          //   }
+          // }
+          // &-dimen {
+          //   padding: 149px 0px 90px 35px;
+          //   .ratio {
+          //     p {
+          //       color: $red-white-cl;
+          //     }
+          //     p:first-child {
+          //       margin-bottom: 0px;
+          //     }
+          //   }
+          // }
+        }
+      }
+    }
+
+    &-spec {
+      h3 {
+        margin-bottom: 40px;
+      }
+      .wrap__spec {
+        display: flex;
+        @include xs {
+          display: block;
+        }
+        &-left {
+          padding-right: 265px;
+          .ratio {
+            p:first-child {
+              margin-bottom: 0px;
+            }
+          }
+          .text {
+            margin: 30px 0px;
+          }
+          @include xs {
+            padding-right: 0px;
+          }
+        }
+        &-right {
+          p {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    // margin-top: 30px;
+    margin-top: 30px;
+    .button__wraper {
+      @include keyframes(topdown) {
+        0% {
+          @include transform(translateY(0px));
+          opacity: 0;
+          @include transition(0.3s);
+        }
+        100% {
+          @include transform(translateY(10px));
+          opacity: 1;
+          @include transition(0.3s);
+        }
+      }
+      text-align: center;
+      img {
+        padding-bottom: 20px;
+        @include animation(topdown 1s ease forwards infinite);
+      }
+      .btn {
+        .btnbook {
+          .btnbook__button {
+            background-color: $gray-cl;
+            cursor: pointer;
+            // background-color: red;
+            a {
+              color: $yellow-cl;
+            }
+            &:hover {
+              background-color: $yellow-cl;
+              a {
+                color: $dark-blue-cl;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

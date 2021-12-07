@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>GBOX</title>
+    <!-- <link rel="icon" href="favicon.ico" /> -->
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+
+    <!-- meta facebook -->
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="/dest/stylelibs.min.css" />
+    <link rel="stylesheet" href="/fonts/font.css" />
+    <link rel="stylesheet" href="/dest/style.min.css" />
+  </head>
+
+  <!-- Mỗi body của mỗi page nên có class ví dụ homepage, aboutpage, contactpage... -->
+
+  <body class="rentalpage">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="humbeger">
+            <span></span>
+          </div>
+          <div class="logo">
+            <a href="/index.html">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <img src="/img/icon facebook.png" alt="" />
+        </div>
+      </div>
+      <div class="header__wrap">
+        <div class="container">
+          <div class="header__bot">
+            <a href="/about.html">ABOUT</a>
+            <ul class="menu">
+              <li><a href="/studio.html">STUDIO</a></li>
+              <li><a href="/rental.html">RENTAL</a></li>
+              <li><a href="/cafe.html">CAFE</a></li>
+              <li><a href="/work.html">WORK</a></li>
+            </ul>
+            <a href="/contact.html">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <ul>
+        <li><a href="/about.html">ABOUT</a></li>
+        <li><a href="/studio.html">STUDIO</a></li>
+        <li><a href="/rental.html">RENTAL</a></li>
+        <li><a href="/cafe.html">CAFE</a></li>
+        <li><a href="/work.html">WORK</a></li>
+        <li><a href="/contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Example HTML -->
+      <section class="rental">
+        <div class="container">
+          <div class="rental__info">
+            <div class="number">
+              <div class="number__wrap">
+                <p>studio</p>
+                <span>01</span>
+              </div>
+            </div>
+            <div class="rental__info-wrap">
+              <h3 class="titrental --rental">rental</h3>
+              <div class="ratio">
+                <p>dimensions</p>
+                <p>
+                  87ft × 92ft × 31ft <br /><span
+                    >(26.52m × 28.04m × 9.45m)</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rental__submit">
+            <div class="rental__submit-company">
+              <h3 class="titrental">company details</h3>
+              <div class="form">
+                <div class="form__left">
+                  <label>Company Name: * </label><br />
+                  <input type="text" /><br />
+                  <label>Contact Name: *</label><br />
+                  <input type="text" /><br />
+                  <label for="fname">Phone: *</label><br />
+                  <input type="text" />
+                </div>
+                <div class="form__right">
+                  <label>E-mail: * </label><br />
+                  <input type="text" /><br />
+                  <label>Accounts payable contact: *</label><br />
+                  <input type="text" /><br />
+                  <label>Company Address: *</label><br />
+                  <textarea type="text"></textarea><br />
+                </div>
+              </div>
+            </div>
+
+            <div class="rental__submit-booking">
+              <h3 class="titrental">booking detail</h3>
+              <div class="choose">
+                <p>studio</p>
+                <div class="choose__number">
+                  <div class="num active"><h4>01</h4></div>
+                  <div class="num"><h4>02</h4></div>
+                  <div class="num"><h4>03</h4></div>
+                  <div class="num"><h4>04</h4></div>
+                </div>
+              </div>
+
+              <div class="bookform">
+                <div class="form">
+                  <div class="form__left">
+                    <label>Catering requirements:</label><br />
+                    <textarea type="text"></textarea><br />
+                  </div>
+                  <div class="form__right">
+                    <label>Lighting requirements: </label><br />
+                    <textarea type="text"></textarea><br />
+                    <p>
+                      Please note: All lighting hire to go through Gbox Studios
+                    </p>
+                  </div>
+                </div>
+                <label class="book">Booking Duration:</label><br />
+                <div class="date">
+                  <div class="date__begin">
+                    <input
+                      type="date"
+                      name="begin"
+                      placeholder="dd-mm-yyyy"
+                    /><br />
+                  </div>
+
+                  <div class="date__imge">
+                    <img src="/img/next.png" alt="" />
+                  </div>
+
+                  <div class="date__mobile">
+                    <img src="/img/VectorDown.png" alt="" />
+                  </div>
+                  <div class="date__end">
+                    <input
+                      type="date"
+                      name="begin"
+                      placeholder="dd-mm-yyyy"
+                    /><br />
+                  </div>
+                </div>
+
+                <div class="input__wrap">
+                  <div class="lab"><label>Project Reference:</label></div>
+                  <br />
+                  <input type="text" /><br />
+                  <div class="lab">
+                    <label>Where did you hear about us:</label>
+                  </div>
+                  <br />
+                  <input type="text" /><br />
+                </div>
+
+                <div class="btn">
+                  <div class="btnbook">
+                    <div class="btnbook__title">
+                      By submitting this form I agree to
+                      <span>GBox Studio</span>’s Terms & Conditions.
+                    </div>
+                    <div class="btnbook__button"><a href="#">book now</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__top-left">
+            <p>email info@goldenboxstudios.com</p>
+            <p class="tele">Tel <span>+84 979 872 809</span></p>
+          </div>
+
+          <p class="footer__top-right">
+            If you have any questions, comments or<br />
+            suggestions, feel free to email us or send us a message.
+          </p>
+          <p class="footer__top-mobile">
+            andress<br />
+            04 bau cat district tan binh ho chi minh city.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="address">
+            andress<br />
+            04 bau cat district tan binh ho chi minh city.
+          </p>
+
+          <div class="form">
+            <div class="form__left">
+              <label>Your Name</label><br />
+              <input type="text" /><br />
+              <label>Phone</label><br />
+              <input type="text" /><br />
+              <label for="fname">Email</label><br />
+              <input type="text" />
+            </div>
+            <div class="form__right">
+              <label>Subject</label><br />
+              <input type="text" /><br />
+              <label>Message</label><br />
+              <textarea></textarea>
+
+              <div class="send">
+                <a href="#">SEND</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__final">
+          <img class="backtop" src="/img/arrow.png" alt="" />
+
+          <p>© 2018 GBOX STUDIO. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="./dest/mainjquery.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+</html>

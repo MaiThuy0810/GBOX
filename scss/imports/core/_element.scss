@@ -1,0 +1,126 @@
+.btnbook {
+  display: flex;
+  .btnbook__button {
+    // background-color: red;
+    height: 101px;
+    width: 101px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    // background-color: $yellow-cl;
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 21px;
+      //   font-weight: bold;
+      font-family: pb;
+      text-transform: uppercase;
+      color: $black-cl;
+    }
+  }
+  .btnbook__title {
+    color: $white-book-cl;
+    font-size: 14px;
+    font-family: pr;
+    line-height: 20px;
+  }
+}
+.number {
+  width: 120px;
+  height: 120px;
+  background-color: $yellow-cl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrap {
+    padding-top: 15px;
+    p {
+      font-size: 11px;
+      line-height: 20px;
+      font-family: pr;
+      text-transform: uppercase;
+      // margin-bottom: 15px;
+    }
+    span {
+      font-size: 61.46px;
+      // line-height: 102.44px;
+      font-family: din;
+    }
+  }
+}
+
+.title {
+  font-family: pr;
+  letter-spacing: 3.2px;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.--bottom {
+  margin-bottom: 20px;
+}
+.des {
+  font-family: ar;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+.titrental {
+  font-size: 32px;
+  line-height: 30.48px;
+  letter-spacing: -0.4px;
+  font-family: peb;
+  text-transform: capitalize;
+  color: $yellow-rental-cl;
+}
+
+.ratio {
+  @include textdes;
+  // max-width: 145px;
+  p:first-child {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+.backall,
+.studiodet__banner-backall {
+  @include textdes;
+  display: flex;
+  align-items: center;
+  img {
+    margin-left: 30px;
+  }
+}
+
+.controls {
+  @include textdes;
+
+  .button {
+    display: flex;
+    align-items: center;
+    color: $black-cl;
+    .pre {
+      border-right: 1px solid black;
+    }
+    .--bor {
+      padding: 0px 10px;
+    }
+  }
+}
+
+.icon {
+  &:hover {
+    fill: $yellow-cl;
+  }
+}
+
+// body .container,
+// html .container {
+//   width: 100%;
+//   padding-right: 0px;
+//   padding-left: 0px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }

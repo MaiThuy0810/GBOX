@@ -1,0 +1,329 @@
+// css img, button, heading, title, input, elements, components...
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  &.--center {
+    margin: 0 auto;
+    display: block;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+// colors (tuỳ chỉnh)
+.--white-cl {
+  color: $white-cl;
+}
+.--black-cl {
+  color: $black-cl;
+}
+.--blue-cl {
+  color: $blue-cl;
+}
+
+// css article (nội dung chi tiết bài viết)
+article {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    // font-family: ib; // font bold
+    display: block;
+  }
+  h1 {
+    font-size: var(--h1-fs);
+    line-height: var(--h1-lh);
+    margin: 0 0 0.67rem 0;
+  }
+  h2 {
+    font-size: var(--h2-fs);
+    line-height: var(--h2-lh);
+    margin: 0 0 0.75rem 0;
+  }
+  h3 {
+    font-size: var(--h3-fs);
+    line-height: var(--h3-lh);
+    margin: 0 0 0.83rem 0;
+  }
+  h4 {
+    font-size: var(--h4-fs);
+    line-height: var(--h4-lh);
+    margin: 0 0 1.12rem 0;
+  }
+  h5 {
+    font-size: var(--h5-fs);
+    line-height: var(--h5-lh);
+    margin: 0 0 1.5rem 0;
+  }
+  h6 {
+    font-size: 0.67rem;
+    margin: 0 0 1.67rem 0;
+  }
+
+  p {
+    margin: 0 0 1.12rem 0;
+  }
+  strong {
+    // font-family: ib; // font bold
+  }
+  ol,
+  ul {
+    list-style: initial;
+    padding-left: 18px;
+  }
+  img {
+    display: inline-block;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 25px auto;
+  }
+  .video {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin: 25px auto;
+    iframe,
+    video {
+      position: absolute;
+      @include size(100%);
+      top: 0;
+      left: 0;
+    }
+  }
+  @include xs {
+    img {
+      margin: 20px auto;
+    }
+  }
+}
+
+.heading {
+  font-family: ib;
+  &.--h1 {
+    font-size: var(--h1-fs);
+    line-height: var(--h1-lh);
+  }
+  &.--h2 {
+    font-size: var(--h2-fs);
+    line-height: var(--h2-lh);
+  }
+}
+
+.product {
+  span {
+    font-weight: initial;
+  }
+  .container {
+    .product__tags {
+      @include xs {
+        display: none;
+      }
+
+      display: flex;
+      justify-content: center;
+      //   align-items: center;
+      // padding-top: 50px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      @include header;
+      .tag {
+        padding-top: 50px;
+        margin: 0px 20px;
+        color: $gray-light-cl;
+        cursor: pointer;
+        &:hover {
+          color: $black-cl;
+          transition: ($t);
+        }
+        &.active {
+          color: black;
+        }
+      }
+    }
+    .product__wrap {
+      @include keyframes(downtop) {
+        0% {
+          @include transform(translateY(0px));
+          opacity: 1;
+          @include transition(0.2s);
+        }
+        100% {
+          @include transform(translateY(10px));
+          opacity: 0;
+          @include transition(0.2s);
+        }
+      }
+      display: none;
+      &.active {
+        display: grid;
+        @include xs {
+          display: block;
+        }
+      }
+
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 315px 315px;
+      text-align: center;
+      column-gap: 20px;
+      row-gap: 70px;
+      @include sm {
+        row-gap: 20px;
+      }
+      &-item {
+        @include animation(downtop 1s ease forwards);
+        animation-direction: reverse;
+        // position: relative;
+        // overflow: hidden;
+        .img {
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          height: 0;
+          padding-bottom: 65.2%;
+          img {
+            width: 100%;
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%) scale(1));
+            @include transition($t);
+            &:hover {
+              @include transform(translate(-50%, -50%) scale(1.05));
+              @include transition($t);
+            }
+          }
+        }
+
+        .text {
+          line-height: 20px;
+          text-align: center;
+          padding-top: 40px;
+          @include xs {
+            padding-bottom: 50px;
+          }
+          p {
+            line-height: 20px;
+          }
+          .tit {
+            &::after {
+              content: "";
+              width: 10px;
+              height: 3px;
+              background-color: $yellow-cl;
+              display: block;
+              margin: 10px auto 0px auto;
+              @include xs {
+                margin-top: 20px;
+                margin-bottom: 20px;
+              }
+            }
+            @include header;
+            padding-bottom: 5px;
+          }
+          // h4 {
+
+          //   @include xs {
+          //     margin-top: 38px;
+          //   }
+          // }
+          p {
+            @include textdes;
+            span {
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+    .product__down {
+      padding-top: 80px;
+      padding-bottom: 78px;
+      // border-bottom: 1px solid $black-cl;
+      text-align: center;
+
+      @include keyframes(topdown) {
+        0% {
+          @include transform(translateY(0px));
+          opacity: 0;
+          @include transition(0.3s);
+        }
+        100% {
+          @include transform(translateY(10px));
+          opacity: 1;
+          @include transition(0.3s);
+        }
+      }
+
+      @include xs {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        border-bottom: none;
+      }
+      p {
+        text-transform: uppercase;
+        @include header;
+        padding-bottom: 20px;
+      }
+      img {
+        @include animation(topdown 1s ease forwards infinite);
+      }
+    }
+  }
+}
+
+.form {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include xs {
+    display: none;
+  }
+  &__right {
+    padding-left: 20px;
+    .send {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 5px;
+      // margin-right: 50px;
+      a {
+        background-color: $black-cl;
+        color: white;
+        text-align: right;
+        font-size: 10px;
+        font-family: pb;
+        padding: 10px 10px;
+      }
+    }
+  }
+  label {
+    font-family: pr;
+    font-size: 12px;
+    //   line-height: 66px;
+  }
+  input {
+    border: none;
+    border-bottom: 1px solid black;
+    // background-color: $yellow-cl;
+    width: 220px;
+    margin: 15px 0px;
+    outline: none;
+  }
+  textarea {
+    width: 222px;
+    margin: 30px 0px;
+    height: 95px;
+  }
+}
